@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <h2>Guess The <span>Number </span>Game</h2>
+    <section class="s">
+    <div class="container">
+        <p>Correct guess = +10</p>
+        <p>Wrong guess = -2 </p>
+       
+        <div class="game-input">
+            <h3 id="limit"></h3>
+            <input type="number" id="userInput" placeholder="Enter a number" required>
+            <div class="btn-class">
+                <button id="button" class="btn" onclick="compareNumbers()">Submit</button>
+                <button class="btn" onclick="clearInput()">Clear</button>
+                <button class="btn" onclick="reload()">Reload</button>
+            </div>
+            <p id="result"></p>
+            <p id="chances"></p>
+            <p id="score"></p>
+
+        </div>
+
+
+
+    </div>
+    <p id="result"> </p>
+
+</section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
